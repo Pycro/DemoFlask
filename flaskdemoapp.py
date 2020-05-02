@@ -52,7 +52,7 @@ def myform():
 
 
 
-#The below code runs the app as a webserver on port 5555 if you open localhost and port 5555 you will see the app
+#The below code runs the app as a webserver on port 5000 if you open localhost and port 5000 you will see the app
 if __name__ == '__main__':
     HOST = environ.get('SERVER_HOST', 'localhost')
     try:
