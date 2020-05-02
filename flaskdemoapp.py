@@ -1,12 +1,12 @@
 #flask demo app
-from flask import Flask, flash, redirect, render_template, request, session, abort
-from os import environ
+from flask import Flask, render_template
+
 from datetime import datetime
-import os
+
 
 
 app = Flask(__name__)
-app.secret_key = os.urandom(12)
+
 #Main structure some imports above for key modules required
 
 #you basically now make your routes ie your page links either with templates or simply code first few will be code
