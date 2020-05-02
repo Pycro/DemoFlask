@@ -29,6 +29,12 @@ def variable(name):
     myname = name
     return('Welcome, '+name)
 
+@app.route('/getfahreneit/<fahreneit>')
+def getcelcius(fahreneit):
+    f = float(fahreneit)
+    c = (f-32)*(5/9)
+    return(str(c))
+
 #returning a template saves writing webpages over and over kind of like a site master
 @app.route('/template')
 def withtemplate():
@@ -53,10 +59,4 @@ def myform():
 
 
 #The below code runs the app as a webserver on port 5000 if you open localhost and port 5000 you will see the app
-if __name__ == '__main__':
-    HOST = environ.get('SERVER_HOST', 'localhost')
-    try:
-        PORT = int(environ.get('SERVER_PORT', '5000'))
-    except ValueError:
-        PORT = 5000
-    app.run(HOST, PORT)
+app.run()
