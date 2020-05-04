@@ -59,7 +59,7 @@ a.pagelink:visited{
 #limits {
     color: white;
 }
-.sgsbutton {
+.mybutton {
     border: 2px solid transparent;
     background: hotpink;
     color: #ECF0F1;
@@ -75,27 +75,27 @@ a.pagelink:visited{
     width: 250px;
     margin: 0 auto;
 }
-    .sgsbutton:hover {
+    .mybutton:hover {
         background-color: dimgray !important;
         color: hotpink !important;
         border: 2px solid dimgray !important;
     }
-    .sgsbutton::selection {
+    .mybutton::selection {
         background-color: dimgray !important;
         color: hotpink !important;
         border: 2px solid dimgray !important;
     }
-    .sgsbutton:active {
+    .mybutton:active {
         background-color: dimgray !important;
         color: hotpink !important;
         border: 2px solid dimgray !important;
     }
-    .sgsbutton:after {
+    .mybutton:after {
         background-color: dimgray !important;
         color: hotpink !important;
         border: 2px solid dimgray !important;
     }
-    .sgsbutton:focus {
+    .mybutton:focus {
         background-color: dimgray !important;
         color: hotpink !important;
         border: 2px solid dimgray !important;
